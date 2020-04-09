@@ -10,63 +10,32 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script defer src="js/suisai.js"></script>
   <script defer src="js/index.js"></script>
   <title>Сюцай</title>
 </head>
 
 <body>
   <div class="container-fluid" id="app">
-    <h1>Сюцай</h1>
-    <div>
-      <div>Дата рождения: {{day}}.{{month}}.{{year}}</div>
-      <div class="my-2">День: <input type="number" v-model="day" min="1" max="31" step="1"></div>
-      <div class="my-2">Месяц: <input type="number" v-model="month" min="1" max="12" step="1"></div>
-      <div class="my-2">Год: <input type="number" v-model="year" min="1900" max="2100" step="1"></div>
-    </div>
-    <div>
-      <h3>Матрица</h3>
-      <div>Число сознания: {{chs}}</div>
-      <div>Миссия: {{mission}}</div>
-      <div>Строка: {{dateString}}</div>
-      <div>Матрица: {{matrix}}</div>
-      <div>
-        <table class="table-bordered">
-          <tr>
-            <td></td>
-            <td>{{matrixPretty[3].join(", ")}}</td>
-            <td>{{matrixPretty[6].join(", ")}}</td>
-            <td>{{matrixPretty[9].join(", ")}}</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ЧС {{chs}}</td>
-            <td>{{matrixPretty[2].join(", ")}}</td>
-            <td>{{matrixPretty[5].join(", ")}}</td>
-            <td>{{matrixPretty[8].join(", ")}}</td>
-            <td>М {{mission}}</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>{{matrixPretty[1].join(", ")}}</td>
-            <td>{{matrixPretty[4].join(", ")}}</td>
-            <td>{{matrixPretty[7].join(", ")}}</td>
-            <td></td>
-          </tr>
-        </table>
-      </div>
+    <h1>Твой Сюцай</h1>
 
-      <div>
-        <h3>Линии</h3>
-        <ul>
-          <li>Линия 1</li>
-        </ul>
-      </div>
-    </div>
     <div>
-      <h3>Узнать свой Год, Месяц, День</h3>
-      <div>Год: </div>
-      <div>Месяц: </div>
-      <div>День: </div>
+      <form action="#" class="form-inline">
+       
+        <input type="number" placeholder="День" class="form-control mb-2 mr-sm-2"  min="1" max="31" step="1" v-model="day">
+        <input type="number" placeholder="Месяц" class="form-control mb-2 mr-sm-2"  min="1" max="12" step="1" v-model="month">
+        <input type="number" placeholder="Год" class="form-control mb-2 mr-sm-2"  min="1900" max="2050" step="1" v-model="year">
+      
+      </form>
+    </div>
+    <hr>
+    <div>
+      <p>Число Сознания {{chs}}</p>
+      <p>Миссия {{mission}}</p>
+      <hr>
+      <p>Личный Год {{selfYear}}</p>
+      <p>Личный Месяц {{selfMonth}}</p>
+      <p>Личный День {{selfDay}}</p>
     </div>
   </div>
 
