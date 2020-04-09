@@ -17,14 +17,14 @@
 
 <body>
   <div class="container-fluid" id="app">
-    <h1>Твой Сюцай</h1>
+    <h1><a href="http://suzai.ru/syuczaj-chislovaya-nauka/" target="_blank">Твой Сюцай</a></h1>
 
     <div>
       <form action="#" class="form-inline">
        
-        <input type="number" placeholder="День" class="form-control mb-2 mr-sm-2"  min="1" max="31" step="1" v-model="day">
-        <input type="number" placeholder="Месяц" class="form-control mb-2 mr-sm-2"  min="1" max="12" step="1" v-model="month">
-        <input type="number" placeholder="Год" class="form-control mb-2 mr-sm-2"  min="1900" max="2050" step="1" v-model="year">
+        <input type="number" placeholder="дд" class="form-control"  min="1" max="31" step="1" v-model="day">
+        <input type="number" placeholder="мм" class="form-control "  min="1" max="12" step="1" v-model="month">
+        <input type="number" placeholder="гггг" class="form-control"  min="1900" max="2050" step="1" v-model="year">
       
       </form>
     </div>
@@ -37,6 +37,11 @@
       <p>Личный Месяц {{selfMonth}}</p>
       <p>Личный День {{selfDay}}</p>
     </div>
+    <hr>
+    <p>
+      Всего хорошего,<br>
+      Михей<br>
+      Я <a href="https://vk.com/mihey_coach" target="_blank">ВКонтакте</a> и <a href="https://www.instagram.com/mihey_coach/" target="_blank">Instagram</a>. Давайте дружить</p>
   </div>
 
 

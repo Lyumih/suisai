@@ -8,7 +8,7 @@ function simplify(text = "") {
 
 function formatText(text = "") {
     if (text == "") return 0
-    console.log(typeof text)
+    // console.log(typeof text)
     if ( typeof text === 'number') return text
     return text.replace(/\D/g, "")
 }
@@ -35,7 +35,7 @@ function getSumNumber(num) {
 // simplify()
 // simplify("123f")
 // simplify(124231)
-simplify("12221234")
+// simplify("12221234")
 
 
 // console.log(reduceNumberSimTople(46));

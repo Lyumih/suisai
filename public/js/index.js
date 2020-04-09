@@ -1,9 +1,9 @@
 const app = new Vue({
   el: "#app",
   data: {
-    day: 2,
-    month: 4,
-    year: 1996,
+    day: "",
+    month: "",
+    year: "",
   },
   computed: {
     chs() {
