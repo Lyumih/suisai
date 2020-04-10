@@ -4,6 +4,10 @@ const app = new Vue({
     day: "",
     month: "",
     year: "",
+    yearDescription: []
+  },
+  created() {
+    this.yearDescription = yearDescription
   },
   computed: {
     chs() {
